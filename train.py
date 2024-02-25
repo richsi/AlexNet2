@@ -2,7 +2,7 @@ import argparse
 import yaml
 
 from utils.dataset import ILSVRC_Dataset
-
+from utils.model import create_model
 
 def train(config_fn: str) -> None:
 	with open(config_fn, 'r') as stream:
@@ -11,9 +11,7 @@ def train(config_fn: str) -> None:
 	train_dataset = ILSVRC_Dataset(set_type = "train")	
 	val_dataset = ILSVRC_Dataset(set_type = "val")
 
-	print(train_dataset[:5])
-	print(val_dataset[:5])	
-
+		
 
 
 

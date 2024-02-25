@@ -1,4 +1,5 @@
 from datasets import load_dataset
+from itertools import islice
 
 class ILSVRC_Dataset():
 	"""
@@ -12,17 +13,13 @@ class ILSVRC_Dataset():
 		dataset = load_dataset("imagenet-1k", streaming=True, trust_remote_code=True)
 
 		if set_type == "val":
-			self.data = dataset["validation"].take(200)
-			
+			self.data = list(islice(dataset["validation"], 200))	
 		else:
-			self.data = dataset["train"].take(1000)
+			self.data = list(islice(dataset["train"], 1000))
 	
 	
 	def __getitem__(self, idx):
-		if isinstance(idx, slice):
-			return self.data[idx]
-		else:
-			return self.data[idx]
+		return self.data[idx]
 
 	def __len__(self):
 		return len(self.data)	

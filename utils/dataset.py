@@ -1,5 +1,5 @@
-from datasets import load_dataset
 from itertools import islice
+from datasets import load_dataset
 
 class ILSVRC_Dataset():
 	"""

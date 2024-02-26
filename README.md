@@ -1,4 +1,4 @@
-#ImageNet Classification with a Reimplementation of AlexNet
+# ImageNet Classification with a Reimplementation of AlexNet
 
 This is a reimplementaiton of AlexNet by Krizhevsky.
 

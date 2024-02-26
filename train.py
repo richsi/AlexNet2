@@ -11,7 +11,8 @@ def train(config_fn: str) -> None:
 	train_dataset = ILSVRC_Dataset(set_type = "train")	
 	val_dataset = ILSVRC_Dataset(set_type = "val")
 
-		
+	print(train_dataset[:5])
+	print('\n type(train_dataset)')		
 
 
 

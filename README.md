@@ -2,7 +2,7 @@
 
 This is a reimplementaiton of AlexNet by Krizhevsky.
 
-## ImageNet Overview
+## AlexNet Overview 
 
 #### Dataset
 ImageNet1K dataset, also known as ILSVRC 2012, is a subset of the larger ImageNet dataset.

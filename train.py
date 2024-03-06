@@ -20,5 +20,5 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--config', type = str, required = True, help = 'path to yaml config')
 	args = parser.parse_args()
-	train(config_fn = args.config)
+	train(config_fn = args.config
 	
